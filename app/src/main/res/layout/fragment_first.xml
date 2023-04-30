@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".MainMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <inc.fabudi.numericalanalysis.views.TwoTextButton
+                android:id="@+id/NA01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="25dp"
+                app:textBottom="Работа #1"
+                app:textMain="Решение СЛАУ" />
+
+            <inc.fabudi.numericalanalysis.views.TwoTextButton
+                android:id="@+id/NA02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="25dp"
+                app:textBottom="Работа #2"
+                app:textMain="Решение СНАУ" />
+
+            <inc.fabudi.numericalanalysis.views.TwoTextButton
+                android:id="@+id/NA03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="25dp"
+                app:textBottom="Работа #3"
+                app:textMain="Решение СОДУ" />
+
+            <inc.fabudi.numericalanalysis.views.TwoTextButton
+                android:id="@+id/NA04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="25dp"
+                app:textBottom="Работа #4"
+                app:textMain="Приближение МНК" />
+
+            <inc.fabudi.numericalanalysis.views.TwoTextButton
+                android:id="@+id/NA05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="25dp"
+                app:textBottom="Работа #5"
+                app:textMain="Вычисление ОИ" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

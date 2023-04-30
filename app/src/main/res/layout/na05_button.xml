@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_card_shape_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/na05_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Условие"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ru.noties.jlatexmath.JLatexMathView
+            android:id="@+id/na05_condition_latex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:letterSpacing="-0.04"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:jlmv_textColor="#FFFFFF"
+            app:jlmv_textSize="16sp" />
+
+        <ru.noties.jlatexmath.JLatexMathView
+            android:id="@+id/na05_condition_latex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:letterSpacing="-0.04"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:jlmv_textColor="#FFFFFF"
+            app:jlmv_textSize="16sp" />
+
+        <ru.noties.jlatexmath.JLatexMathView
+            android:id="@+id/na05_condition_latex3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:letterSpacing="-0.04"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:jlmv_textColor="#FFFFFF"
+            app:jlmv_textSize="16sp" />
+
+        <ru.noties.jlatexmath.JLatexMathView
+            android:id="@+id/na05_condition_latex4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:letterSpacing="-0.04"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:jlmv_textColor="#FFFFFF"
+            app:jlmv_textSize="16sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/na05_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Решение"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_rect_shape_accent"
+            android:orientation="vertical">
+
+            <ru.noties.jlatexmath.JLatexMathView
+                android:id="@+id/na05_solution_latex_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:letterSpacing="-0.04"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:jlmv_textColor="#FFFFFF"
+                app:jlmv_textSize="16sp" />
+
+            <ru.noties.jlatexmath.JLatexMathView
+                android:id="@+id/na05_solution_latex_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:letterSpacing="-0.04"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:jlmv_textColor="#FFFFFF"
+                app:jlmv_textSize="16sp" />
+
+            <ru.noties.jlatexmath.JLatexMathView
+                android:id="@+id/na05_solution_latex_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:letterSpacing="-0.04"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:jlmv_textColor="#FFFFFF"
+                app:jlmv_textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

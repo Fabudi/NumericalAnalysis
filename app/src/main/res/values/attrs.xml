@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TwoTextButton">
+        <attr name="textMain" format="string" />
+        <attr name="textBottom" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MatrixView">
+        <attr name="rows" format="integer" />
+        <attr name="cols" format="integer" />
+        <attr name="inputMode" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="NA05Button">
+        <attr name="condition1" format="string" />
+        <attr name="condition2" format="string" />
+        <attr name="condition3" format="string" />
+        <attr name="condition4" format="string" />
+        <attr name="conditionCounter" format="integer" />
+        <attr name="solutionCounter" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MultiTextButtonWithDropdown">
+        <attr name="solved" format="boolean" />
+        <attr name="dropped" format="boolean" />
+        <attr name="oText1" format="string" />
+        <attr name="oText2" format="string" />
+        <attr name="oText3" format="string" />
+        <attr name="oText4" format="string" />
+        <attr name="cText1" format="string" />
+        <attr name="cText2" format="string" />
+        <attr name="cText3" format="string" />
+        <attr name="cText4" format="string" />
+        <attr name="oCounter" format="integer" />
+        <attr name="cCounter" format="integer" />
+        <attr name="taskId" format="integer" />
+        <attr name="mathStyle" format="boolean" />
+    </declare-styleable>
+</resources>

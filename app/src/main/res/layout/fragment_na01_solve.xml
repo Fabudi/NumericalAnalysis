@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:padding="30dp"
+    tools:context=".Na01InputFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_card_shape_primary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Решение"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ru.noties.jlatexmath.JLatexMathView
+                android:id="@+id/condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:letterSpacing="-0.04"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="16sp"
+                app:jlmv_latex="\\sin(4)"
+                app:jlmv_textColor="#FFFFFF"
+                app:jlmv_textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textViewGauss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="◉◉◉ Метод Гаусса"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Приводим к верхнему треугольному виду"
+                android:textColor="#D6D6D6"
+                android:visibility="gone" />
+
+            <ru.noties.jlatexmath.JLatexMathView
+                android:id="@+id/triangle_matrix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:letterSpacing="-0.04"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:jlmv_latex="\\sin(4)"
+                app:jlmv_textColor="#FFFFFF"
+                app:jlmv_textSize="16sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Обратный ход"
+                android:textColor="#D6D6D6"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewGauss2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Решение"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/button_rect_shape_accent"
+                    android:orientation="vertical">
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/solution_x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:letterSpacing="-0.04"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:jlmv_textColor="#FFFFFF"
+                        app:jlmv_textSize="16sp" />
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/solution_y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:letterSpacing="-0.04"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:jlmv_textColor="#FFFFFF"
+                        app:jlmv_textSize="16sp" />
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/solution_z"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:letterSpacing="-0.04"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:jlmv_textColor="#FFFFFF"
+                        app:jlmv_textSize="16sp" />
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/solution_w"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:letterSpacing="-0.04"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:jlmv_textColor="#FFFFFF"
+                        app:jlmv_textSize="16sp" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/more"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:tag="DOWN"
+                    app:backgroundTint="#007BFC"
+                    app:icon="@drawable/arrow_down"
+                    app:iconPadding="0dp"
+                    app:iconSize="24dp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textViewGauss3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Вектор невязки"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/button_rect_shape_accent"
+                    android:orientation="vertical">
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/residual_x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:letterSpacing="-0.04"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:jlmv_textColor="#FFFFFF"
+                        app:jlmv_textSize="16sp" />
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/residual_y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:letterSpacing="-0.04"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:jlmv_textColor="#FFFFFF"
+                        app:jlmv_textSize="16sp" />
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/residual_z"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:letterSpacing="-0.04"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:jlmv_textColor="#FFFFFF"
+                        app:jlmv_textSize="16sp" />
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/residual_w"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:letterSpacing="-0.04"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:jlmv_textColor="#FFFFFF"
+                        app:jlmv_textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <inc.fabudi.numericalanalysis.views.ButtonView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="32dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="24dp"
+        android:text="Меню" />
+
+</FrameLayout>

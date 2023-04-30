@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="Решение СЛАУ"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/NA02"
+        android:name="inc.fabudi.numericalanalysis.Na02Fragment"
+        android:label="Решение СНАУ"
+        tools:layout="@layout/fragment_na02">
+        <action
+            android:id="@+id/action_NA02_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NA01MatrixInput"
+        android:name="inc.fabudi.numericalanalysis.Na01InputFragment"
+        android:label="Решение СЛАУ"
+        tools:layout="@layout/fragment_na01_input">
+        <action
+            android:id="@+id/action_NA01MatrixInput_to_NA01Solution"
+            app:destination="@id/NA01Solution" />
+        <action
+            android:id="@+id/action_NA01MatrixInput_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="inc.fabudi.numericalanalysis.MainMenu"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_NA01MatrixInput"
+            app:destination="@id/NA01MatrixInput" />
+        <action
+            android:id="@+id/action_FirstFragment_to_NA02"
+            app:destination="@id/NA02" />
+        <action
+            android:id="@+id/action_FirstFragment_to_NA04"
+            app:destination="@id/NA04" />
+        <action
+            android:id="@+id/action_FirstFragment_to_na05Fragment"
+            app:destination="@id/na05Fragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_na03Fragment"
+            app:destination="@id/na03Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NA01Solution"
+        android:name="inc.fabudi.numericalanalysis.Na01SolveFragment"
+        android:label="Решение СЛАУ"
+        tools:layout="@layout/fragment_na01_solve">
+        <action
+            android:id="@+id/action_NA01Solution_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NA04"
+        android:name="inc.fabudi.numericalanalysis.Na04Fragment"
+        android:label="Приближение МНК"
+        tools:layout="@layout/fragment_na04">
+        <action
+            android:id="@+id/action_NA04_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/na05Fragment"
+        android:name="inc.fabudi.numericalanalysis.Na05Fragment"
+        android:label="Вычисление ОИ">
+        <action
+            android:id="@+id/action_na05Fragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/na03Fragment"
+        android:name="inc.fabudi.numericalanalysis.Na03Fragment"
+        android:label="Решение СОДУ">
+        <action
+            android:id="@+id/action_na03Fragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF13141f</color>
+    <color name="primary_variant">#FF535672</color>
+    <color name="accent">#FF007cfe</color>
+    <color name="accent_variant">#FFc0cbd8</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#FF1c1c27</color>
+    <color name="light_grey">#FFebeaef</color>
+    <color name="dark_primary">#FF28293d</color>
+    <color name="dark_primary_lighter">#FF9090a7</color>
+    <color name="dark_primary_variant">#FF1c1c27</color>
+</resources>
